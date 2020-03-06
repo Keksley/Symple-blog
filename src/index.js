@@ -1,3 +1,19 @@
-async function app() {
-    await fetch('sjdljl');
-}
+import { HeaderComponent } from './components/header.component';
+import { NavigationComponent } from './components/navigation.component';
+import { CreateComponent } from './components/create.component'
+import { FavoritComponent } from './components/favorite.component'
+import { PostsComponent } from './components/posts.component'
+
+new HeaderComponent('header');
+
+const navigation = new NavigationComponent('navigation');
+
+const create = new CreateComponent('create');
+const favorite = new FavoritComponent('favorite');
+const posts = new PostsComponent('posts');
+
+navigation.registerTabs([
+    {name: 'create', component: create},
+    {name: 'posts', component: posts},
+    {name: 'favorite', component: favorite}
+])

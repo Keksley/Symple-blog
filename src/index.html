@@ -10,13 +10,13 @@
   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.9/css/fontawesome.css">
   <link rel="stylesheet" href="https://unpkg.com/mustard-ui@latest/dist/css/mustard-ui.min.css">
   <link rel="stylesheet" href="styles.css">
-  <title>JS Prepare</title>
+  <title>SYMPLE BLOG</title>
 </head>
 <body>
 <header id="header">
-  <h1 class="title">БЛОГ 001001</h1>
+  <h1 class="title">Symple blog</h1>
   <h2 class="subtitle">Создавайте статьи и добавляйте их в избранное</h2>
-  <button class="get-started button button-primary button-large">Приступить</button>
+  <button class="get-started button button-primary button-large js-header-start">Приступить</button>
 </header>
 
 <section class="container w-container">
@@ -29,7 +29,7 @@
   <div class="loader-wrap hide" id="loader">
     <div class="lds-ripple"><div></div><div></div></div>
   </div>
-
+<!--Create component-->
   <form id="create">
     <h1 class="h4">Создать новый пост</h1>
 
@@ -56,6 +56,8 @@
       type="submit"
     >Создать</button>
   </form>
+<!--******************************************-->
+<!--Posts component-->
   <div id="posts">
     <div class="panel">
       <div class="panel-head">
@@ -72,8 +74,10 @@
       </div>
     </div>
   </div>
+  <!--******************************************-->
+  <!--Favorite component-->
   <div id="favorite" class="hide"></div>
-
+  <!--******************************************-->
 </section>
 </body>
 </html>
