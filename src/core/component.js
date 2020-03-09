@@ -7,11 +7,16 @@ export class Component {
 
     init() {} // Метод вызывается только после инициализации компонента элементом html
 
+    onHide() {};
+    onShow() {};
+
     hide() {
         this.$el.classList.add('hide');
+        this.onHide();
     }
 
     show() {
         this.$el.classList.remove('hide');
+        this.onShow();
     }
 }

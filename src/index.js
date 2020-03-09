@@ -3,14 +3,15 @@ import { NavigationComponent } from './components/navigation.component';
 import { CreateComponent } from './components/create.component'
 import { FavoritComponent } from './components/favorite.component'
 import { PostsComponent } from './components/posts.component'
+import { LoaderComponent } from './components/loader.component';
 
 new HeaderComponent('header');
 
 const navigation = new NavigationComponent('navigation');
-
+const loader = new LoaderComponent('loader')
 const create = new CreateComponent('create');
-const favorite = new FavoritComponent('favorite');
-const posts = new PostsComponent('posts');
+const favorite = new FavoritComponent('favorite', {loader}); //Тоже что {loader: loader} привет ES2015+
+const posts = new PostsComponent('posts', {loader});
 
 navigation.registerTabs([
     {name: 'create', component: create},
