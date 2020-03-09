@@ -1,7 +1,7 @@
 # Symple-blog
 
 # Простой SPA блог на ванильном JS
-***Результат доступен по ссылке: https://vanillajs-blog.firebaseapp.com
+***Результат доступен по ссылке: https://vanillajs-blog.firebaseapp.com***
 
 Учебный проект реализованный в рамках изучения веб-разработки на языке JavaScript.
 
